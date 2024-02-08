@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miney</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="./img/miney_logo.svg" />
+
+    <link rel="stylesheet" href="./css/flickity.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script src="./js/flickity.pkgd.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="navbar navbar_desktop">
+          <div class="navbar_left">
+            <div class="flex">
+              <div class="navbar_logo">
+                <a href="index.html">
+                  <img src="./img/logo.svg" alt="logo" />
+                </a>
+              </div>
+              <div class="nav_menu">
+                <ul class="nav_menu_list">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="product_page.html">Products</a></li>
+                  <li><a href="about_us.html">About Us</a></li>
+                  <li><a href="contact_us.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="navbar_right">
+            <a href="javascript:void(0)">Login</a>
+            <a href="javascript:void(0)" class="btn_border">Sign Up</a>
+          </div>
+        </div>
+        <div class="navbar navbar_mobile">
+          <div class="navbar_left">
+            <div class="flex">
+              <div class="navbar_logo">
+                <a href="javascript:void(0)">
+                  <img src="./img/logo.svg" alt="logo" />
+                </a>
+              </div>
+              <div class="nav_menu">
+                <ul class="mob_nav_icons">
+                  <li>
+                    <a href="javascript:void(0)">
+                      <img src="./img/logo.svg" alt="logo" />
+                    </a>
+                  </li>
+                  <li class="mob_menu_close">
+                    <a href="javascript:void(0)">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="17"
+                        viewBox="0 0 17 17"
+                        fill="none"
+                      >
+                        <path
+                          d="M15.9999 15.9999L8.49996 8.49996M8.49996 8.49996L1 1M8.49996 8.49996L16 1M8.49996 8.49996L1 16"
+                          stroke="white"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="nav_menu_list">
+                  <li><a href="javascript:void(0)">Demos</a></li>
+                  <li><a href="javascript:void(0)">Features</a></li>
+                  <li><a href="javascript:void(0)">Pricing</a></li>
+                  <li><a href="javascript:void(0)">Contact</a></li>
+                </ul>
+                <div class="nav_mob_btn">
+                  <a href="javascript:void(0)">Login</a>
+                  <a href="javascript:void(0)" class="btn_border">Sign Up</a>
+                </div>
+              </div>
+              <div class="menu_toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero_section">
+      <div class="container">
+        <div class="flex hero_section_wrapper">
+          <div class="col-5 col-md-6">
+            <div class="hero_txt">
+              <h1>Buy, Run, and Earn Great Returns From Computers</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+              <div class="flex btns">
+                <a href="javascript:void(0)" class="btn_mint">Explore</a>
+                <a href="javascript:void(0)">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-7 col-md-6">
+            <div class="hero_img_wrapper">
+              <img src="./img/hero_img.png" alt="hero_img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand">
+      <div class="container">
+        <div
+          class="brand_wrapper carousel"
+          data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'
+        >
+          <div class="carousel-cell">
+            <div class="brand_img_wrapper">
+              <div class="brand_img">
+                <img src="./img/brand_1.png" alt="brand" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="brand_img_wrapper">
+              <div class="brand_img">
+                <img src="./img/brand_2.png" alt="brand" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="brand_img_wrapper">
+              <div class="brand_img">
+                <img src="./img/brand_3.png" alt="brand" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="brand_img_wrapper">
+              <div class="brand_img">
+                <img src="./img/brand_4.png" alt="brand" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="brand_img_wrapper">
+              <div class="brand_img">
+                <img src="./img/brand_5.png" alt="brand" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="brand_img_wrapper">
+              <div class="brand_img">
+                <img src="./img/brand_2.png" alt="brand" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="brand_img_wrapper">
+              <div class="brand_img">
+                <img src="./img/brand_3.png" alt="brand" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="guide">
+      <div class="container">
+        <div class="heading">
+          <h2>A simple, proven way to boost your team performance.</h2>
+          <p>
+            Fully layered dolor sit amet, consectetur Facere, nobis, id expedita
+            dolores officiis laboriosam.
+          </p>
+        </div>
+        <div class="flex guide_wrapper">
+          <div class="col-4">
+            <div class="guide_inner">
+              <div class="guide_card">
+                <div class="guide_icon">
+                  <img src="./img/service_icon_1.svg" alt="service_icon" />
+                </div>
+                <h6>Crypto Mining</h6>
+                <p>
+                  Fully layered dolor sit amet, consectetur adipisicing elit.
+                  Facere, nobis, id expedita dolores officiis laboriosam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="guide_inner">
+              <div class="guide_card">
+                <div class="guide_icon">
+                  <img src="./img/service_icon_2.svg" alt="service_icon" />
+                </div>
+                <h6>Rendering</h6>
+                <p>
+                  Fully layered dolor sit amet, consectetur adipisicing elit.
+                  Facere, nobis, id expedita dolores officiis laboriosam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="guide_inner">
+              <div class="guide_card">
+                <div class="guide_icon">
+                  <img src="./img/service_icon_3.svg" alt="service_icon" />
+                </div>
+                <h6>Over 800 Clients</h6>
+                <p>
+                  Fully layered dolor sit amet, consectetur adipisicing elit.
+                  Facere, nobis, id expedita dolores officiis laboriosam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gpu_mining">
+      <div class="container">
+        <div class="flex align-item-center">
+          <div class="col-6">
+            <div class="gpu_mining_wrapper">
+              <div class="gpu_img">
+                <img src="./img/product_img_2.png" alt="product_img" />
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="gpu_mining_wrapper">
+              <div class="gpu_txt">
+                <span>Statistics</span>
+                <h2>What is GPU Crypto Mining?</h2>
+                <p>
+                  Teamu is a game that is familiar to all ages. You can play the
+                  battle and adventure arena with your family and friends. Come
+                  on! Invite your friends to play together
+                </p>
+                <div class="flex btns">
+                  <a href="javascript:void(0)" class="btn_mint">Explore</a>
+                  <a href="javascript:void(0)">Lean More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail">
+      <div class="container">
+        <div class="flex">
+          <div class="col-5 col-md-6">
+            <div class="detail_wrapper">
+              <div class="heading text-left">
+                <h2>Boost productivity with best creativity</h2>
+                <p>
+                  Your well-oiled doesn’t have to down due to complex processes,
+                  or lack of time to enforce consistency.
+                </p>
+              </div>
+              <div class="icon_with_txt">
+                <div class="flex align-item-center">
+                  <div class="icon_box">
+                    <div class="icon_circle">
+                      <img src="./img/bitcon_mine.svg" alt="icon" />
+                    </div>
+                  </div>
+                  <div class="icon_w_txt">
+                    <span class="h7">Free updates forever</span>
+                    <p>
+                      Your well-oiled machine doesn’t have to break down due to
+                      build processes.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex align-item-center">
+                  <div class="icon_box">
+                    <div class="icon_circle">
+                      <img src="./img/box.svg" alt="icon" />
+                    </div>
+                  </div>
+                  <div class="icon_w_txt">
+                    <span class="h7">Responsive web design</span>
+                    <p>
+                      Your well-oiled machine doesn’t have to break down due to
+                      build processes.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex align-item-center">
+                  <div class="icon_box">
+                    <div class="icon_circle">
+                      <img src="./img/bulb_chip.svg" alt="icon" />
+                    </div>
+                  </div>
+                  <div class="icon_w_txt">
+                    <span class="h7">Loaded with features</span>
+                    <p>
+                      Your well-oiled machine doesn’t have to break down due to
+                      build processes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="step">
+      <div class="container">
+        <div class="heading">
+          <h2>4 Simple Step To Start Earning</h2>
+        </div>
+        <div class="step_wrapper flex">
+          <div class="col-6">
+            <div class="step_inner">
+              <div class="step_card flex">
+                <div class="step_logo">
+                  <img src="./img/research_hardware.svg" alt="step_logo" />
+                </div>
+                <div class="step_txt flex">
+                  <h4>Research Hardware</h4>
+                  <p>
+                    Expand your maze and explore expand your maze and explore
+                    Expand your maze and explore expand your maze
+                  </p>
+                  <a href="javascript:void(0)">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="step_inner">
+              <div class="step_card flex">
+                <div class="step_logo">
+                  <img src="./img/compare.svg" alt="step_logo" />
+                </div>
+                <div class="step_txt flex">
+                  <h4>Compare and Buy</h4>
+                  <p>
+                    Expand your maze and explore expand your maze and explore
+                    Expand your maze and explore expand your maze
+                  </p>
+                  <a href="javascript:void(0)">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="step_inner">
+              <div class="step_card flex">
+                <div class="step_logo">
+                  <img src="./img/manage.svg" alt="step_logo" />
+                </div>
+                <div class="step_txt flex">
+                  <h4>Compare and Buy</h4>
+                  <p>
+                    Expand your maze and explore expand your maze and explore
+                    Expand your maze and explore expand your maze
+                  </p>
+                  <a href="javascript:void(0)">Manage</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="step_inner">
+              <div class="step_card flex">
+                <div class="step_logo">
+                  <img src="./img/adjust.svg" alt="step_logo" />
+                </div>
+                <div class="step_txt flex">
+                  <h4>Adjust</h4>
+                  <p>
+                    Expand your maze and explore expand your maze and explore
+                    Expand your maze and explore expand your maze
+                  </p>
+                  <a href="javascript:void(0)">Manage</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="btn btn_blue">Explore</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="container">
+        <div class="heading">
+          <h2>Our qualified team</h2>
+          <p>
+            Fully layered dolor sit amet, consectetur Facere, nobis, id expedita
+            dolores officiis laboriosam.
+          </p>
+        </div>
+        <div class="flex team_wrapper">
+          <div class="col-3 col-md-6">
+            <div class="team_inner">
+              <div class="team_card">
+                <div class="team_img">
+                  <img src="./img/team_img_1.png" alt="team_member_img" />
+                </div>
+                <span class="h7">Cameron Williamson</span>
+                <p>Co -Founder</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 col-md-6">
+            <div class="team_inner">
+              <div class="team_card">
+                <div class="team_img">
+                  <img src="./img/team_img_2.png" alt="team_member_img" />
+                </div>
+                <span class="h7">Brooklyn Simmons</span>
+                <p>Project Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 col-md-6">
+            <div class="team_inner">
+              <div class="team_card">
+                <div class="team_img">
+                  <img src="./img/team_img_3.png" alt="team_member_img" />
+                </div>
+                <span class="h7">Robert Fox</span>
+                <p>Web Designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 col-md-6">
+            <div class="team_inner">
+              <div class="team_card">
+                <div class="team_img">
+                  <img src="./img/team_img_4.png" alt="team_member_img" />
+                </div>
+                <span class="h7">Esther Howard</span>
+                <p>HR Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="counter_wrapper">
+      <div class="container">
+        <div class="flex">
+          <div class="col-3 col-sm-6">
+            <div class="counter_inner">
+              <div class="counter_num">
+                <p class="counter" data-number="28"></p>
+                <span>K</span>
+              </div>
+              <p>Users</p>
+            </div>
+          </div>
+          <div class="col-3 col-sm-6">
+            <div class="counter_inner">
+              <div class="counter_num">
+                <p class="counter" data-number="13"></p>
+                <span>K</span>
+              </div>
+              <p>Download</p>
+            </div>
+          </div>
+          <div class="col-3 col-sm-6">
+            <div class="counter_inner">
+              <div class="counter_num">
+                <p class="counter" data-number="68"></p>
+                <span>K</span>
+              </div>
+              <p>Likes</p>
+            </div>
+          </div>
+          <div class="col-3 col-sm-6">
+            <div class="counter_inner">
+              <div class="counter_num">
+                <p class="counter" data-number="10"></p>
+                <span>K</span>
+              </div>
+              <p>5 Star Rating</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonal">
+      <div class="container">
+        <div class="flex testimonal_wrapper">
+          <div class="col-6 col-md-5">
+            <div class="heading text-left">
+              <h2>What clients are saying</h2>
+            </div>
+            <div
+              class="carousel"
+              data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": true, "pageDots": false }'
+            >
+              <div class="carousel-cell">
+                <img src="./img/quote.svg" alt="quote" />
+                <p>
+                  Leading an organization is incredibly rewarding and equally
+                  humbling. Confidence and humility. Every success is built on
+                  lessons from mistakes made is incredibly rewarding and equally
+                  humbling. It requires healthy.
+                </p>
+                <div class="client_detail">
+                  <span>- Mila McSabbu</span>
+                  <p>Freelance Designer</p>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <img src="./img/quote.svg" alt="quote" />
+                <p>
+                  Leading an organization is incredibly rewarding and equally
+                  humbling. Confidence and humility. Every success is built on
+                  lessons from mistakes made is incredibly rewarding and equally
+                  humbling. It requires healthy.
+                </p>
+                <div class="client_detail">
+                  <span>- Anna Rose</span>
+                  <p>Freelance Devloper</p>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <img src="./img/quote.svg" alt="quote" />
+                <p>
+                  Leading an organization is incredibly rewarding and equally
+                  humbling. Confidence and humility. Every success is built on
+                  lessons from mistakes made is incredibly rewarding and equally
+                  humbling. It requires healthy.
+                </p>
+                <div class="client_detail">
+                  <span>- Mike Doe</span>
+                  <p>Figma Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-7">
+            <div class="flex flex-column">
+              <div class="client_img_wrapper flex">
+                <div class="client_img">
+                  <div class="loader">
+                    <img src="./img/client_1.png" alt="client_img" />
+                  </div>
+                </div>
+                <div class="client_img">
+                  <div class="loader">
+                    <img src="./img/client_2.png" alt="client_img" />
+                  </div>
+                </div>
+              </div>
+              <div class="client_img_wrapper flex">
+                <div class="client_img">
+                  <div class="loader">
+                    <img src="./img/client_3.png" alt="client_img" />
+                  </div>
+                </div>
+                <div class="client_img">
+                  <div class="loader">
+                    <img src="./img/client_4.png" alt="client_img" />
+                  </div>
+                </div>
+              </div>
+              <div class="client_img_wrapper flex">
+                <div class="client_img">
+                  <div class="loader">
+                    <img src="./img/client_5.png" alt="client_img" />
+                  </div>
+                </div>
+                <div class="client_img">
+                  <div class="loader">
+                    <img src="./img/client_6.png" alt="client_img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="join_us">
+      <div class="container">
+        <div class="heading">
+          <h2>
+            Join of our community of 10,0000 users of the world’s leading
+            organizations
+          </h2>
+        </div>
+        <div class="flex join_us_form_wrapper">
+          <form action="GET" class="join_us_form">
+            <input
+              type="email"
+              name="email"
+              id="emial"
+              placeholder="Enter your email"
+            />
+            <button type="submit">Subscribe Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="flex footer_desktop footer_inner">
+          <div class="col-5 col-md-6">
+            <div class="footer_wrapper">
+              <a href="index.html"><img src="./img/logo.svg" alt="logo" /></a>
+              <span
+                >There are many variations of passages of Lorem the Ipsum
+                available but it is the majority of suffered that a alteration
+                in that some dummy text.</span
+              >
+              <ul class="footer_social">
+                <li>
+                  <a href="javascript:void(0)"
+                    ><img src="./img/insta.svg" alt="social_media"
+                  /></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    ><img src="./img/linkedin.svg" alt="social_media"
+                  /></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    ><img src="./img/fb.svg" alt="social_media"
+                  /></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    ><img src="./img/twitter.svg" alt="social_media"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2 col-md-6">
+            <div class="footer_wrapper">
+              <div class="footer_link">
+                <p class="footer_link_heading">Services</p>
+                <ul class="footer_menu">
+                  <li><a href="javascript:void(0)">Incident Responder</a></li>
+                  <li><a href="javascript:void(0)">Secure Managed IT</a></li>
+                  <li><a href="javascript:void(0)">Check website Url</a></li>
+                  <li><a href="javascript:void(0)">Locker Security</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 col-md-6">
+            <div class="footer_wrapper">
+              <div class="footer_link">
+                <p class="footer_link_heading">About Us</p>
+                <ul class="footer_menu">
+                  <li><a href="javascript:void(0)">Payment Plans</a></li>
+                  <li><a href="javascript:void(0)">Make saving More</a></li>
+                  <li><a href="javascript:void(0)">Tax Calculator</a></li>
+                  <li><a href="javascript:void(0)">Talk To Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 col-md-6">
+            <div class="footer_wrapper">
+              <div class="our_support">
+                <p class="our_support_heading">Our Support Download</p>
+                <p class="address">
+                  455 West Orchard Street Kings Mountain, NC 28086 Phone: +8
+                  (123) 985 789 Email: metax@gamil.com
+                </p>
+                <div class="app_store">
+                  <ul class="app_store_list">
+                    <li>
+                      <a href="javascript:void(0)"
+                        ><img src="./img/app_store.png" alt="app_store"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)"
+                        ><img src="./img/play_store.png" alt="app_store"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex footer_mob footer_inner">
+          <div class="col-5 col-md-6">
+            <div class="footer_wrapper">
+              <a href="javascript:void(0)"
+                ><img src="./img/logo.svg" alt="logo"
+              /></a>
+              <span
+                >There are many variations of passages of Lorem the Ipsum
+                available but it is the majority of suffered that a alteration
+                in that some dummy text.</span
+              >
+              <ul class="footer_social">
+                <li>
+                  <a href="javascript:void(0)"
+                    ><img src="./img/insta.svg" alt="social_media"
+                  /></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    ><img src="./img/linkedin.svg" alt="social_media"
+                  /></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    ><img src="./img/fb.svg" alt="social_media"
+                  /></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    ><img src="./img/twitter.svg" alt="social_media"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2 col-md-6">
+            <div class="footer_wrapper">
+              <div class="footer_link">
+                <p class="footer_link_heading">Services</p>
+                <ul class="footer_menu">
+                  <li><a href="javascript:void(0)">Incident Responder</a></li>
+                  <li><a href="javascript:void(0)">Secure Managed IT</a></li>
+                  <li><a href="javascript:void(0)">Check website Url</a></li>
+                  <li><a href="javascript:void(0)">Locker Security</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 col-md-6">
+            <div class="footer_wrapper">
+              <div class="footer_link">
+                <p class="footer_link_heading">About Us</p>
+                <ul class="footer_menu">
+                  <li><a href="javascript:void(0)">Payment Plans</a></li>
+                  <li><a href="javascript:void(0)">Make saving More</a></li>
+                  <li><a href="javascript:void(0)">Tax Calculator</a></li>
+                  <li><a href="javascript:void(0)">Talk To Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 col-md-6">
+            <div class="footer_wrapper">
+              <div class="our_support">
+                <p class="our_support_heading">Our Support Download</p>
+                <p class="address">
+                  455 West Orchard Street Kings Mountain, NC 28086 Phone: +8
+                  (123) 985 789 Email: metax@gamil.com
+                </p>
+                <div class="app_store">
+                  <ul class="app_store_list">
+                    <li>
+                      <a href="javascript:void(0)"
+                        ><img src="./img/app_store.png" alt="app_store"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)"
+                        ><img src="./img/play_store.png" alt="app_store"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-content-center copy_right">
+          <p>@ 2021 Miney. All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/counter.js"></script>
+  </body>
+</html>

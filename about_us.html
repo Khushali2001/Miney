@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Miney</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="icon" type="image/x-icon" href="./img/miney_logo.svg">
+
+	<link rel="stylesheet" href="./css/flickity.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="./js/jquery-3.6.4.min.js"></script>
+	<script src="./js/flickity.pkgd.min.js"></script>
+
+</head>
+<body>	
+
+	<header class="header_dark">
+		<div class="container">
+			<div class="top_bar flex">
+				<div class="top_bar_left">
+					<div class="icon_and_txt_wrapper">
+						<div class="icon_and_txt flex">
+							<img src="./img/phone.svg" alt="icon">
+							<p>(0909) 8790966</p>
+						</div>
+						<div class="icon_and_txt flex">
+							<img src="./img/mail.svg" alt="icon">
+							<p>miney@io.com</p>
+						</div>
+					</div>
+				</div>
+				<div class="top_bar_search">
+					<form action="get" class="topbar_form">
+						<input type="search" name="search" id="search" placeholder="Search">
+					</form>
+				</div>
+				<div class="top_bar_right">
+					<div class="icon_and_txt_wrapper">
+						<div class="icon_and_txt flex">
+							<img src="./img/location.svg" alt="icon">
+							<p>HQ in Georgia, USA</p>
+						</div>
+						<div class="icon_and_txt flex">
+							<img src="./img/truck.svg" alt="icon">
+							<p>Track Your Order</p>
+						</div>
+						<div class="icon_and_txt flex">
+							<img src="./img/usa.svg" alt="icon">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="navbar_dark nav_dark_desk flex align-item-center">
+				<div class="nav_dark_left flex align-item-center">
+					<div class="nav_dark_logo">
+						<a href="index.html"><img src="./img/logo.svg" alt="logo"></a>
+					</div>
+					<div class="nav_dark_menu">
+						<ul class="nav_d_menu_list">
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="javascript:void(0)">Explore</a>
+								<ul class="sub_menu">
+									<li><a href="faq.html">Faq</a></li>
+									<li><a href="term_service.html">Service</a></li>
+									<li><a href="contact_us.html">Contact Us</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0)">Help</a></li>
+							<li><a href="about_us.html">About Us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="nav_dark_right">
+					<ul class="nav_dark_icon align-item-center">
+						<li><a href="javascript:void(0)"><img src="./img/heart.svg" alt="icon"></a></li>
+						<li><a href="javascript:void(0)"><img src="./img/cart.svg" alt="icon"></a></li>
+						<li><a href="javascript:void(0)"><img src="./img/user.svg" alt="icon"></a></li>
+						<li class="nav_search"><a href="javascript:void(0)"><img src="./img/search_md.svg" alt="icon"></a></li>
+						<li class="dark_nav_toggle"><a href="javascript:void(0)"><img src="./img/dark_nav_toggler.svg" alt="icon"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="navbar_dark nav_dark_mob flex align-item-center">
+				<div class="nav_dark_left flex align-item-center">
+					<div class="nav_dark_logo">
+						<a href="index.html"><img src="./img/logo.svg" alt="logo"></a>
+					</div>
+					<div class="nav_dark_menu">
+						<ul class="mob_nav_d_icons">
+							<li><a href="javascript:void(0)"> <img src="./img/logo.svg" alt="logo"> </a></li>
+							<li class="mob_dark_menu_close">
+								<a href="javascript:void(0)">
+									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><path d="M15.9999 15.9999L8.49996 8.49996M8.49996 8.49996L1 1M8.49996 8.49996L16 1M8.49996 8.49996L1 16" stroke="white" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								</a>
+							</li>
+						</ul>
+						<ul class="nav_d_menu_list">
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="javascript:void(0)">Explore</a>
+								<ul class="sub_menu">
+									<li><a href="faq.html">Faq</a></li>
+									<li><a href="term_service.html">Service</a></li>
+									<li><a href="contact_us.html">Contact Us</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:void(0)">Help</a></li>
+							<li><a href="about_us.html">About Us</a></li>
+						</ul>
+						<ul class="nav_d_icon align-item-center ">
+							<li><a href="javascript:void(0)"><img src="./img/heart.svg" alt="icon"></a></li>
+						    <li><a href="javascript:void(0)"><img src="./img/cart.svg" alt="icon"></a></li>
+						    <li><a href="javascript:void(0)"><img src="./img/user.svg" alt="icon"></a></li>
+						    <li class="nav_search"><a href="javascript:void(0)"><img src="./img/search_md.svg" alt="icon"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="nav_dark_right">
+					<ul class="nav_dark_icon align-item-center">
+						<li class="dark_nav_toggle"><a href="javascript:void(0)"><img src="./img/dark_nav_toggler.svg" alt="icon"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="about_us">
+		<div class="container">
+			<div class="flex about_us_wrapper about_left">
+				<div class="col-6 flex">
+					<div class="about_us_inner">
+						<h1>About Miney</h1>						
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac iaculis arcu, eu elementum neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac iaculis arcu, eu elementum neque.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac iaculis arcu, eu elementum neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac iaculis arcu, eu elementum neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac iaculis arcu, eu elementum neque.</p>
+					</div>
+				</div>
+				<div class="col-6 flex">
+					<div class="about_us_img">
+						<img src="./img/main_product_md.png" alt="main_product">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="benefit">
+		<div class="container">
+			<div class="heading">
+				<h2>Benefit of GPU Crypto Mining</h2>
+			</div>
+			<div class="flex benefit_wrapper">
+				<div class="col-3 col-md-6">
+					<div class="benefit_inner">
+						<div class="benefit_card">
+							<div class="benefit_img">
+								<img src="./img/benifit_1.svg" alt="benefit_icon">
+							</div>
+							<h5>Mining</h5>
+							<p>We provide crypto mining services designed and inspired by various cryptocurrency enthusiasts and blockchain experts.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 col-md-6">
+					<div class="benefit_inner">
+						<div class="benefit_card">
+							<div class="benefit_img">
+								<img src="./img/benifit_2.svg" alt="benefit_icon">
+							</div>
+							<h5>Mining</h5>
+							<p>We provide crypto mining services designed and inspired by various cryptocurrency enthusiasts and blockchain experts.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 col-md-6">
+					<div class="benefit_inner">
+						<div class="benefit_card">
+							<div class="benefit_img">
+								<img src="./img/benifit_3.svg" alt="benefit_icon">
+							</div>
+							<h5>Mining</h5>
+							<p>We provide crypto mining services designed and inspired by various cryptocurrency enthusiasts and blockchain experts.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 col-md-6">
+					<div class="benefit_inner">
+						<div class="benefit_card">
+							<div class="benefit_img">
+								<img src="./img/benifit_4.svg" alt="benefit_icon">
+							</div>
+							<h5>Mining</h5>
+							<p>We provide crypto mining services designed and inspired by various cryptocurrency enthusiasts and blockchain experts.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about_us">
+		<div class="container">
+			<div class="flex about_us_wrapper about_right">
+				<div class="col-6 flex">
+					<div class="about_us_img">
+						<img src="./img/main_product_md.png" alt="main_product">
+					</div>
+				</div>
+				<div class="col-6 flex">
+					<div class="about_us_inner">
+						<h1>About Miney</h1>						
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac iaculis arcu, eu elementum neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac iaculis arcu, eu elementum neque.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac iaculis arcu, eu elementum neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac iaculis arcu, eu elementum neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac iaculis arcu, eu elementum neque.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="meet_team">
+		<div class="container">
+			<div class="heading">
+				<h2>Meet The Executive Team</h2>
+			</div>
+			<div class="flex meet_team_wrapper">
+				<div class="col-3 col-md-6">
+					<div class="meet_team_inner">
+						<div class="meet_team_card">
+							<div class="meet_team_img">
+								<img src="./img/team_member.png" alt="team_member">
+							</div>
+							<h5>Isaac McLean</h5>
+							<p>Chief Executive Officer</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 col-md-6">
+					<div class="meet_team_inner">
+						<div class="meet_team_card">
+							<div class="meet_team_img">
+								<img src="./img/team_member.png" alt="team_member">
+							</div>
+							<h5>Jasmine	Nolan</h5>
+							<p>Chief Operating Officer</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 col-md-6">
+					<div class="meet_team_inner">
+						<div class="meet_team_card">
+							<div class="meet_team_img">
+								<img src="./img/team_member.png" alt="team_member">
+							</div>
+							<h5>Yvonne Cornish</h5>
+							<p>Chief Financial Officer</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 col-md-6">
+					<div class="meet_team_inner">
+						<div class="meet_team_card">
+							<div class="meet_team_img">
+								<img src="./img/team_member.png" alt="team_member">
+							</div>
+							<h5>Sabina	Lee</h5>
+							<p>Chief Technology Officer</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="join_us newsletter">
+		<div class="container">
+			<div class="heading text-left"><h2>Sign Up to Our Newsletter and get 20% Discount For First Shopping</h2></div>
+			<div class="flex join_us_form_wrapper">
+				<form action="GET" class="join_us_form newsletter_form">
+					<input type="email" name="email" id="emial" placeholder="Your email address">
+					<button type="submit">Subscribe</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer footer_dark">
+		<div class="container">
+			<div class="flex footer_desktop footer_inner">
+				<div class="col-5 col-md-6">
+					<div class="footer_wrapper">
+						<a href="index.html"><img src="./img/logo.svg" alt="logo"></a>
+						<span>There are many variations of passages of Lorem the Ipsum available but it is the majority of suffered that a alteration in that some dummy text.</span>
+						<ul class="footer_social">
+							<li><a href="javascript:void(0)"><img src="./img/face_book.svg" alt="social_media"></a></li>
+							<li><a href="javascript:void(0)"><img src="./img/twitter_lg.svg" alt="social_media"></a></li>
+							<li><a href="javascript:void(0)"><img src="./img/in.svg" alt="social_media"></a></li>
+							<li><a href="javascript:void(0)"><img src="./img/youtube.svg" alt="social_media"></a></li>
+							<li><a href="javascript:void(0)"><img src="./img/mail_us.svg" alt="social_media"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-2 col-md-6">
+					<div class="footer_wrapper">
+						<div class="footer_link">
+							<p class="footer_link_heading">Find It Fast</p>
+							<ul class="footer_menu">
+								<li><a href="javascript:void(0)">Accessories</a></li>
+								<li><a href="javascript:void(0)">Gaming</a></li>
+								<li><a href="javascript:void(0)">GPU</a></li>
+								<li><a href="javascript:void(0)">PC Computer</a></li>
+								<li><a href="javascript:void(0)">Ultrabooks</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-2 col-md-6">
+					<div class="footer_wrapper">
+						<div class="footer_link">
+							<p class="footer_link_heading">Information</p>
+							<ul class="footer_menu">
+								<li><a href="about_us.html">About Us</a></li>
+								<li><a href="contact_us.html">Contact Us</a></li>
+								<li><a href="javascript:void(0)">Wish-list</a></li>
+								<li><a href="faq.html">FAQs</a></li>
+								<li><a href="about_us.html">About Us</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 col-md-6">
+					<div class="footer_wrapper">
+						<div class="footer_link">
+							<p class="footer_link_heading">In The Spotlight</p>
+							<ul class="footer_menu">
+								<li><a href="javascript:void(0)">Accessories</a></li>
+								<li><a href="javascript:void(0)">Gaming</a></li>
+								<li><a href="javascript:void(0)">GPU</a></li>
+								<li><a href="javascript:void(0)">PC Computer</a></li>
+								<li><a href="javascript:void(0)">Ultrabooks</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flex footer_mob footer_inner">
+				<div class="col-5 col-md-6">
+					<div class="footer_wrapper">
+						<a href="index.html"><img src="./img/logo.svg" alt="logo"></a>
+						<span>There are many variations of passages of Lorem the Ipsum available but it is the majority of suffered that a alteration in that some dummy text.</span>
+						<ul class="footer_social">
+							<li><a href="javascript:void(0)"><img src="./img/face_book.svg" alt="social_media"></a></li>
+							<li><a href="javascript:void(0)"><img src="./img/twitter_lg.svg" alt="social_media"></a></li>
+							<li><a href="javascript:void(0)"><img src="./img/in.svg" alt="social_media"></a></li>
+							<li><a href="javascript:void(0)"><img src="./img/youtube.svg" alt="social_media"></a></li>
+							<li><a href="javascript:void(0)"><img src="./img/mail_us.svg" alt="social_media"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-2 col-md-6">
+					<div class="footer_wrapper">
+						<div class="footer_link">
+							<p class="footer_link_heading">Find It Fast</p>
+							<ul class="footer_menu">
+								<li><a href="javascript:void(0)">Accessories</a></li>
+								<li><a href="javascript:void(0)">Gaming</a></li>
+								<li><a href="javascript:void(0)">GPU</a></li>
+								<li><a href="javascript:void(0)">PC Computer</a></li>
+								<li><a href="javascript:void(0)">Ultrabooks</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-2 col-md-6">
+					<div class="footer_wrapper">
+						<div class="footer_link">
+							<p class="footer_link_heading">Information</p>
+							<ul class="footer_menu">
+								<li><a href="about_us.html">About Us</a></li>
+								<li><a href="contact_us.html">Contact Us</a></li>
+								<li><a href="javascript:void(0)">Wish-list</a></li>
+								<li><a href="faq.html">FAQs</a></li>
+								<li><a href="about_us.html">About Us</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 col-md-6">
+					<div class="footer_wrapper">
+						<div class="footer_link">
+							<p class="footer_link_heading">In The Spotlight</p>
+							<ul class="footer_menu">
+								<li><a href="javascript:void(0)">Accessories</a></li>
+								<li><a href="javascript:void(0)">Gaming</a></li>
+								<li><a href="javascript:void(0)">GPU</a></li>
+								<li><a href="javascript:void(0)">PC Computer</a></li>
+								<li><a href="javascript:void(0)">Ultrabooks</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flex space_bit align-item-center copy_right">
+				<p>@ 2021 Miney. All Right Reserved</p>
+				<div class="pay_methods">
+					<img src="./img/pay_methods.png" alt="">
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./js/index.js"></script>
+</body>
+</html>	
